@@ -27,10 +27,15 @@
     flex-grow: 2; /* Pushes this section to take up available space */
   
   }
-  
+  .card {
+    background-color: var(--secondary-light-color);
+  }
 .card-section {
-    background-color: #B18E3F;
-    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem 8rem;
+    background-color: var(--primary-light-color);
+    min-height: fit-content;
     flex-grow: 1; /* Pushes this section to take up available space */
   }
 .news-section {
@@ -42,3 +47,4 @@
     margin: 10rem 0rem;
     padding: 0 8rem;
 }
+
