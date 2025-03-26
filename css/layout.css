@@ -43,8 +43,7 @@ body {
   min-height: 100vh; /* Ensure the body spans the full viewport height */
 }
 header {
-  background-color: #000000;
-  color: white;
+  background-color: var(--secondary-light-color);
   height: fit-content;
 }
 .welcome-section {
@@ -63,7 +62,7 @@ header {
   flex-grow: 2; /* Pushes this section to take up available space */
 }
 footer {
-  background-color: #FFFFFF;
+  background-color: var(--button-color);
   height: fit-content;
   flex:1
 }

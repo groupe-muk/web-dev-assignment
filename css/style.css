@@ -2,6 +2,7 @@
 @import url("components.css");
 
 
+
 body {
     background-color: var(--primary-light-color);
 }
@@ -56,3 +57,81 @@ body {
 .secondary-btn:hover{
     background-color: #93c6dc;
 }
+
+
+.navbar{
+    display: flex;
+    height: fit-content;
+}
+
+
+.leftnav{
+    padding-top: 10px;
+    display: flex;
+    width: 30%;
+        
+}
+.SchDetails{
+    
+    
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 0.4rem;
+        
+}
+
+.SchName{
+
+    color: var(--accent-color);
+    font-family: var(--heading-font);
+    font-size: var(--font-size-nav);
+
+}    
+.SchMotto{
+
+    color: var(--primary-light-text-color);
+    font-family: var(--primary-font);
+    font-size: var(--font-size-small);
+
+}
+.rightnav{
+    width:70%;
+    display: flex;
+    padding-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    
+} 
+.navlist {
+
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+    align-items: center;
+       
+}
+
+.navlist li{
+    list-style: none;
+    
+
+}
+
+a{
+    color: var(--primary-light-text-color);
+    text-decoration: none;
+    font-family: var(--primary-font);
+    
+}
+
+a:hover{
+    color:var(--accent-color);
+}
+a:active{
+    color:var(--accent-color);
+}
+
+
