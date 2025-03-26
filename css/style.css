@@ -59,28 +59,26 @@ body {
 }
 
 
-
-header{
-
-    height: 10vh;
-    background-color: var(--secondary-light-color);
-    width: 100%;
+.navbar{
+    display: flex;
+    height: fit-content;
 }
 
-.leftnav{
 
+.leftnav{
+    padding-top: 10px;
     display: flex;
-    width: 50%;
+    width: 30%;
         
 }
 .SchDetails{
-
+    
+    
     display: flex;
     flex: 1;
     flex-direction: column;
-    gap: 0.5rem;
-    
-    
+    gap: 0.4rem;
+        
 }
 
 .SchName{
@@ -97,7 +95,43 @@ header{
     font-size: var(--font-size-small);
 
 }
+.rightnav{
+    width:70%;
+    display: flex;
+    padding-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
 
+    
+} 
+.navlist {
 
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+    align-items: center;
+       
+}
+
+.navlist li{
+    list-style: none;
+    
+
+}
+
+a{
+    color: var(--primary-light-text-color);
+    text-decoration: none;
+    font-family: var(--primary-font);
+    
+}
+
+a:hover{
+    color:var(--accent-color);
+}
+a:active{
+    color:var(--accent-color);
+}
 
 
