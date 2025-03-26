@@ -2,7 +2,9 @@
 @import url(layout.css);
 @import url(components.css);
 
-
+.flex {
+  display: felx;
+}
 .welcome-section {
     background: #111827;
     min-height: 70vh;
@@ -17,9 +19,11 @@
   
   }
   .card {
+    border-radius: 0.4rem;
     padding: 2rem;
     background-color: var(--secondary-light-color);
     width: 20rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
   }
 .card-section {
     display: flex;
@@ -37,13 +41,46 @@
     font-size: var(--font-size-small);
 
   }
+  .news-card {
+    border-radius: 0.4rem;
+    background-color: var(--secondary-light-color);
+    width: 20rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+  }
 .news-section {
-    background-color: #1E1E2E;
-    color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4rem 0rem;
+    background-color: var(--secondary-light-color);
     flex-grow: 2; /* Pushes this section to take up available space */
   }
   .welcome-text-container {
     margin: 10rem 0rem;
     padding: 0 8rem;
 }
+.card-image-section img{
+  width: 20rem;
+  height: 8rem;
 
+}
+.news-card-content-section {
+  padding:1rem 1rem;
+}
+
+.news-card-link-section a{
+  color: var(--button-color);
+  display: inline;
+  cursor: pointer;
+}
+.news-card-link-section a:hover {
+  color: var(--accent-color);
+
+
+}
+
+
+.news-card-link-section p, .news-card-link-section i{
+  display: inline;
+  padding:0 0.2rem;
+}
