@@ -36,6 +36,18 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: var(--primary-font);
+  font-size: var(--font-size-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+}
+h1 {
+  font-size: var(--font-size-heading);
+}
+h2 {
+  font-size: var(--font-size-subheading);
 }
 body {
   display: flex;
@@ -45,22 +57,9 @@ body {
 header {
   background-color: var(--secondary-light-color);
   height: fit-content;
+  min-height: 10vh;
 }
-.welcome-section {
-  background: #111827;
-  color: white;
-  flex-grow: 2; /* Pushes this section to take up available space */
-}
-.card-section {
-  background-color: #B18E3F;
-  color: white;
-  flex-grow: 2; /* Pushes this section to take up available space */
-}
-.news-section {
-  background-color: #1E1E2E;
-  color: white;
-  flex-grow: 2; /* Pushes this section to take up available space */
-}
+
 footer {
   background-color: var(--button-color);
   height: fit-content;
