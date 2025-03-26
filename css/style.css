@@ -12,18 +12,7 @@ body {
     
 
 }
-.vertical-space-1 {
-    height: 1rem;
-}
-.vertical-space-2 {
-    height: 2rem;
-}
-.vertical-space-3{
-    height: 3rem;
-}
-.vertical-space-4{
-    height: 4rem;
-}
+
 .first-container {
     background-color: blue;
     flex:4;
@@ -42,9 +31,5 @@ body {
     padding: 10px;
     flex-direction: row;
     justify-content: space-evenly;
-}
-.welcome-text-container {
-    margin: 10rem 0rem;
-    padding: 0 8rem;
 }
 
