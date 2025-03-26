@@ -29,6 +29,7 @@
 --font-size-small: 0.875rem; /* Secondary text, footer links */ 
 --font-size-nav: 1.1rem; /* Navigation links */
 --font-size-stats: 1.5rem; /* Numbers in the stats section */
+--font-size-smaller: 0.75rem;
 
 
 
@@ -37,8 +38,8 @@
   padding: 0;
   margin: 0;
   font-family: var(--primary-font);
-  font-size: var(--font-size-body);
-}
+  font-size: var(--font-size-body); 
+} 
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
@@ -58,12 +59,16 @@ header {
   background-color: var(--secondary-light-color);
   height: fit-content;
   min-height: 10vh;
+  padding-top: 10px;
 }
 
 footer {
   background-color: var(--button-color);
   height: fit-content;
+  padding-left: 8rem;
+  padding-top: 5rem;
   flex:1
+  
 }
 
 }
