@@ -55,14 +55,13 @@ body {
   min-height: 100vh; /* Ensure the body spans the full viewport height */
 }
 header {
-  background-color: #000000;
-  color: white;
+  background-color: var(--secondary-light-color);
   height: fit-content;
   min-height: 10vh;
 }
 
 footer {
-  background-color: #FFFFFF;
+  background-color: var(--button-color);
   height: fit-content;
   flex:1
 }
