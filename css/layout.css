@@ -32,9 +32,40 @@
 
 
 
-
-
-
-
+/* page layout */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body spans the full viewport height */
+}
+header {
+  background-color: #000000;
+  color: white;
+  height: fit-content;
+}
+.welcome-section {
+  background: #111827;
+  color: white;
+  flex-grow: 2; /* Pushes this section to take up available space */
+}
+.card-section {
+  background-color: #B18E3F;
+  color: white;
+  flex-grow: 2; /* Pushes this section to take up available space */
+}
+.news-section {
+  background-color: #1E1E2E;
+  color: white;
+  flex-grow: 2; /* Pushes this section to take up available space */
+}
+footer {
+  background-color: #FFFFFF;
+  height: fit-content;
+  flex:1
 }
 
+}
