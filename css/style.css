@@ -1,3 +1,58 @@
 @import url("layout.css");
 @import url("components.css");
 
+
+body {
+    background-color: var(--primary-light-color);
+}
+.container {
+    width: 200px;
+    height: 100px;
+    color: black;
+    
+
+}
+.first-container {
+    background-color: blue;
+    flex:4;
+
+}
+.second-container {
+    background-color: aqua;
+    flex:2;
+}
+.third-container {
+    background-color: bisque;
+    flex:1;
+}
+.flex-container {
+    background-color: var(--secondary-dark-color);
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.75rem; /* 12px 24px */
+  font-size: 1rem; /* 16px */
+  font-weight: bold;
+  border: none;
+  border-radius: 0.4rem; 
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+}
+.primary-btn {
+    background-color: var(--accent-color);
+    color: white;
+}
+.primary-btn:hover {
+    background-color: #977423;
+}
+.secondary-btn {
+    background-color: var(--button-color);
+}
+.secondary-btn:hover{
+    background-color: #93c6dc;
+}
