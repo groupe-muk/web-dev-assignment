@@ -25,11 +25,26 @@
   /* Font Sizes */
 --font-size-heading: 2.5rem;     /* Main Heading (e.g., "About Us") */
 --font-size-subheading: 1.8rem; /* Section Titles (e.g., "Our Mission", "A Legacy of Excellence") */ 
+--font-size-sub-subheading: 1.5rem; /*card titles*/
 --font-size-body: 1rem; /* Regular text */ 
 --font-size-small: 0.875rem; /* Secondary text, footer links */ 
 --font-size-nav: 1.1rem; /* Navigation links */
 --font-size-stats: 1.5rem; /* Numbers in the stats section */
 --font-size-smaller: 0.75rem;
+
+/* Spacing */
+.vertical-space-1 {
+  height: 1rem;
+}
+.vertical-space-2 {
+  height: 2rem;
+}
+.vertical-space-3{
+  height: 3rem;
+}
+.vertical-space-4{
+  height: 4rem;
+}
 
 
 
@@ -49,6 +64,10 @@ h1 {
 }
 h2 {
   font-size: var(--font-size-subheading);
+}
+h3 {
+  font-size: var(--font-size-sub-subheading);
+
 }
 body {
   display: flex;
