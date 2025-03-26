@@ -12,6 +12,18 @@ body {
     
 
 }
+.vertical-space-1 {
+    height: 1rem;
+}
+.vertical-space-2 {
+    height: 2rem;
+}
+.vertical-space-3{
+    height: 3rem;
+}
+.vertical-space-4{
+    height: 4rem;
+}
 .first-container {
     background-color: blue;
     flex:4;
@@ -31,28 +43,8 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
 }
+.welcome-text-container {
+    margin: 10rem 0rem;
+    padding: 0 8rem;
+}
 
-.btn {
-  display: inline-block;
-  padding: 0.75rem 1.75rem; /* 12px 24px */
-  font-size: 1rem; /* 16px */
-  font-weight: bold;
-  border: none;
-  border-radius: 0.4rem; 
-  cursor: pointer;
-  transition: background 0.3s ease;
-
-}
-.primary-btn {
-    background-color: var(--accent-color);
-    color: white;
-}
-.primary-btn:hover {
-    background-color: #977423;
-}
-.secondary-btn {
-    background-color: var(--button-color);
-}
-.secondary-btn:hover{
-    background-color: #93c6dc;
-}
