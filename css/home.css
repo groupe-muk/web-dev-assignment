@@ -2,18 +2,7 @@
 @import url(layout.css);
 @import url(components.css);
 
-.vertical-space-1 {
-    height: 1rem;
-}
-.vertical-space-2 {
-    height: 2rem;
-}
-.vertical-space-3{
-    height: 3rem;
-}
-.vertical-space-4{
-    height: 4rem;
-}
+
 .welcome-section {
     background: #111827;
     min-height: 70vh;
@@ -28,15 +17,25 @@
   
   }
   .card {
+    padding: 2rem;
     background-color: var(--secondary-light-color);
+    width: 20rem;
   }
 .card-section {
     display: flex;
-    justify-content: space-evenly;
-    padding: 4rem 8rem;
+    justify-content: space-around;
+    padding: 4rem 7rem;
     background-color: var(--primary-light-color);
     min-height: fit-content;
     flex-grow: 1; /* Pushes this section to take up available space */
+  }
+  .title-section {
+    font-family: var(--heading-font);
+    font-weight: bold;
+  }
+  .description-section p{
+    font-size: var(--font-size-small);
+
   }
 .news-section {
     background-color: #1E1E2E;

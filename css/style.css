@@ -6,6 +6,9 @@
 body {
     background-color: var(--primary-light-color);
 }
+.card-icon {
+    color: var(--accent-color);
+}
 .container {
     width: 200px;
     height: 100px;
