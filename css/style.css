@@ -223,3 +223,7 @@ ul.sociallist{
   .slider.round:before {
     border-radius: 50%;
   }
+
+  .contactlist p{
+    display: inline;
+  }
