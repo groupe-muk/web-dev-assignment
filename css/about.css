@@ -42,6 +42,7 @@ h2 {
 }
 .tab {
     padding: 1rem;
+    cursor: pointer;
   
 }
 .active {

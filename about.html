@@ -9,30 +9,33 @@
     <title>About us</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-  
-          <div class="leftnav"> <!--This will have the school name and logo -->
-            <div class="logo"><img src = "assets/images/logo.png" width="70px" height="70px"></div>
-              <div class="SchDetails">
-                <div class="SchName"><b><p>Mt. St. Mary's College Namagunga</p></b></div>
-                <div class="SchMotto"><p>Through knowledge to virtue</p></div>
-              </div>  
-  
-          </div>
-          <div class="rightnav">
-            <ul class="navlist">
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="/about.html">About Us</a></li>
-              <li><a href="/academics.html">Academics</a></li>
-              <li><a href="/news.html">News And Events</a></li>
-              <li><a href="/gallery.html">Gallery</a></li>
-              <li><a href="/contact.html">Contact Us</a></li>
-              <li><button>Dark Mode</button></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+  <header>
+    <nav class="navbar">
+
+      <div class="leftnav"> <!--This will have the school name and logo -->
+        <div class="logo"><img src = "assets/images/logo.png" width="70px" height="70px"></div>
+          <div class="SchDetails">
+            <div class="SchName"><b><p>Mt. St. Mary's College Namagunga</p></b></div>
+            <div class="SchMotto"><p>Through knowledge to virtue</p></div>
+          </div>  
+
+      </div>
+      <div class="rightnav">
+        <ul class="navlist">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/academics.html">Academics</a></li>
+          <li><a href="/news.html">News And Events</a></li>
+          <li><a href="/gallery.html">Gallery</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
+          <li><label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider round"></span>
+          </label></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 <section class="about-section">
        <center> <h1>About Us</h1></center>
        <div class="vertical-space-1"></div>
@@ -196,9 +199,9 @@
            <div class = "title"><b>Contact Us</b></div>
              <div class = "contacts">
                <ul class = "contactlist">
-                 <li><i class="fa fa-map-marker icon" aria-hidden="true"></i> Lugazi, Uganda</li>
-                 <li><i class="fa fa-phone icon" aria-hidden="true"></i> +256 123 456 789</li>
-                 <li><i class="fa fa-envelope icon" aria-hidden="true"></i> info@msmcn.ug</li>
+                 <li><i class="fa fa-map-marker icon" aria-hidden="true"></i><p> Lugazi, Uganda</p></li>
+                 <li><i class="fa fa-phone icon" aria-hidden="true"></i><p> +256 123 456 789</p></li>
+                 <li><i class="fa fa-envelope icon" aria-hidden="true"></i><p> info@msmcn.ug</p></li>
                </ul>
              </div> 
    
@@ -223,6 +226,7 @@
     
 
              <script src="/js/about.js" defer></script>
+             <script src="/js/script.js" defer></script>
 
 </body>
 </html>

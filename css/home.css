@@ -18,6 +18,12 @@
     flex-grow: 2; /* Pushes this section to take up available space */
   
   }
+  .welcome-section p{
+    color: white;
+  }
+  .welcome-section h1{
+    color: white;
+  }
   .card {
     border-radius: 0.4rem;
     padding: 2rem;
