@@ -4,7 +4,7 @@
  /* Colors */
 
     /* Light mode: */
---primary-light-color: #EFEFF0; /* Background color */
+  --primary-light-color: #EFEFF0; /* Background color */
   --secondary-light-color: #FFFFFF; /* Cards */
   --accent-color: #B18E3F; /* Headings, buttons (Gold) */
   --button-color: #9BD7F1; /* Footer, buttons (Light blue)*/
@@ -77,13 +77,16 @@ body {
 header {
   background-color: var(--secondary-light-color);
   height: fit-content;
-  min-height: 10vh;
+  min-height: 5vh;
   padding-top: 10px;
+  width:100%;
+  
 }
 
 footer {
   background-color: var(--button-color);
   height: fit-content;
+  min-height: 25vh;
   padding-left: 8rem;
   padding-top: 5rem;
   flex:1
