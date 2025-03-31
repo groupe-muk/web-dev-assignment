@@ -58,6 +58,7 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
+  color: var(--primary-light-text-color);
 }
 h1 {
   font-size: var(--font-size-heading);
@@ -69,7 +70,11 @@ h3 {
   font-size: var(--font-size-sub-subheading);
 
 }
+p {
+  color: var(--primary-light-text-color);
+}
 body {
+  
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Ensure the body spans the full viewport height */
