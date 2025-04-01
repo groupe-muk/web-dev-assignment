@@ -12,12 +12,16 @@ function applyTheme() {
         document.documentElement.style.setProperty("--secondary-light-color", "#1E1E2E");
         document.documentElement.style.setProperty("--primary-light-text-color", "#94949B");
         document.documentElement.style.setProperty("--button-color", "#111827");
+        document.documentElement.style.setProperty("--light-calendar-button-color", "#94949B");
+        document.documentElement.style.setProperty("--light-prev-days-color", "#efeff049");
         themeToggle.checked = true; // Set the toggle to checked
     } else {
         document.documentElement.style.setProperty("--primary-light-color", "#EFEFF0");
         document.documentElement.style.setProperty("--secondary-light-color", "#FFFFFF");
         document.documentElement.style.setProperty("--primary-light-text-color", "#000000");
         document.documentElement.style.setProperty("--button-color", "#9BD7F1");
+        document.documentElement.style.setProperty("--light-calendar-button-color", "#9BD7F1;");
+        document.documentElement.style.setProperty("--light-prev-days-color", "#EFEFF0");
         themeToggle.checked = false; // Set the toggle to unchecked
     }
 }
@@ -37,6 +41,8 @@ function changeTheme() {
         document.documentElement.style.setProperty("--secondary-light-color", "#FFFFFF");
         document.documentElement.style.setProperty("--primary-light-text-color", "#000000");
         document.documentElement.style.setProperty("--button-color", "#9BD7F1");
+        document.documentElement.style.setProperty("--light-calendar-button-color", "#9BD7F1;");
+        document.documentElement.style.setProperty("--light-prev-days-color", "#EFEFF0");
         console.log("Theme changed to light mode");
     } else {
         // Switch to dark mode
@@ -46,6 +52,8 @@ function changeTheme() {
         document.documentElement.style.setProperty("--secondary-light-color", "#1E1E2E");
         document.documentElement.style.setProperty("--primary-light-text-color", "#94949B");
         document.documentElement.style.setProperty("--button-color", "#111827");
+        document.documentElement.style.setProperty("--light-prev-days-color", "#efeff049");
+        document.documentElement.style.setProperty("--light-calendar-button-color", "#94949B");
         console.log("Theme changed to dark mode");
     }
 }
@@ -54,10 +62,46 @@ function changeTheme() {
 themeToggle.addEventListener("click", changeTheme);
 
 
+/*image slideshow on home page*/
 
+const carousel = document.getElementById("carousel");
+const previousbtn = document.getElementById("prevbtn");
+const nextbtn = document.getElementById("nextbtn");
 
+const images = [
 
+    '/assets/images/dining-hall.jpg',
+    '/assets/images/Namagunga@75.jpg',
+    '/assets/images/sports-day-2.jpg',
+    '/assets/images/Admistrators.jpg'
+];
 
+let currentIndex = 0;
+
+function updateBackground(){
+
+    carousel.style.backgroundImage = `linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+      url('${images[currentIndex]}')`;
+
+}
+
+function nextSlide(){
+    currentIndex = (currentIndex + 1)% images.length;
+    updateBackground();
+}
+
+function prevSlide(){
+    currentIndex = (currentIndex - 1 + images.length)% images.length;
+    updateBackground();
+}
+
+let autoSlide = setInterval(nextSlide, 3000);
+
+updateBackground();
+
+/*calendar on news page*/
 
 const daysContainer = document.querySelector(".days"),
 nextBtn = document.querySelector(".next-btn"),
