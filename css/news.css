@@ -1,10 +1,7 @@
 @import url(layout.css);
 @import url(components.css);
 
-.flex{
 
-    display: flex;
-}
 
 .recent-sch-news-section{
 
@@ -27,11 +24,16 @@
 
 .news-heading{
 
-    color: var(--accent-color);
+    
     font-family: var(--heading-font);
     margin-top: 3rem;
     margin-left: 8.5rem;
     padding-top: 1rem;    
+}
+
+.news-heading h2{
+
+    color: var(--accent-color);
 }
 
 .news-heading.two{
@@ -57,10 +59,13 @@
 .news-subtitle{
 
     background-color: var(--secondary-light-color);    
-    color: var(--accent-color);
-    
+        
 }
 
+.news-subtitle h3{
+
+    color: var(--accent-color);
+}
 .news-subtitle h3{
 
     margin-left: 8.5rem;
@@ -105,10 +110,14 @@
 
 .title-section {
 
-    color: var(--accent-color);
+    
     font-family: var(--heading-font);
     font-weight: bold;
-}  
+}
+
+.title-section h3{
+    color: var(--accent-color);
+}
 
 .description-section .line1,
 .description-section .line2{
@@ -117,14 +126,20 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    color: var(--primary-light-text-color);
 }
  
 .news-card-link-section a{
-    color: var(--button-color);
+    color: var(--light-calendar-button-color);
     display: inline;
     cursor: pointer;
 }
-  .news-card-link-section a:hover {
+
+.news-card-link-section p{
+    color: var(--light-calendar-button-color);
+}
+  .news-card-link-section a:hover,
+  .news-card-link-section p:hover {
     color: var(--accent-color);
   
 }
@@ -162,8 +177,10 @@
    width: 575px;
    border-radius: 0.4rem;
    height: 30px;
-   border: 2px solid var(--primary-light-color);
+   border: 2px solid #efeff049;
    padding-left: 0.5rem;
+   background-color: transparent;
+   color: var(--primary-light-text-color);
    
 }
 
@@ -198,10 +215,15 @@
     height: 35px;
     width: 74rem;
     border-radius: 0.4rem;
-    border: 2px solid var(--primary-light-color);
+    border: 2px solid #efeff049;
     justify-content: center;
+    color: var(--primary-light-text-color);
 
     
+}
+
+.labels{
+    color: var(--primary-light-text-color);
 }
 
 .calendar{
@@ -249,7 +271,7 @@
     width: 50px;
     height: 40px;
     display: flex;
-    color: var(--button-color);
+    color: var(--light-calendar-button-color);
     align-items: center;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -303,6 +325,8 @@
     justify-content: center;
     margin-bottom: 10px;
     transition: all 0.2s ease-in-out;
+    color: var(--primary-light-text-color);
+    font-size: var(--font-size-body);
     
 }
 
@@ -318,7 +342,7 @@
 .days .day.today{
 
     background-color: var(--button-color);
-    color: var(--primary-light-color);
+    color: var(--light-prev-days-color);
 
 }
 .days .day.today:hover{
@@ -330,7 +354,7 @@
 .days .day.next,
 .days .day.prev{
 
-    color: var(--primary-light-color);
+    color: var(--light-prev-days-color);
 }
 
 .event-dots {
@@ -343,7 +367,7 @@
 .event-dot {
     width: 8px;
     height: 8px;
-    background-color: var(--button-color); 
+    background-color: var(--light-calendar-button-color); 
     border-radius: 50%;
     margin-top: 5px; 
 }
@@ -363,6 +387,7 @@
     height: 5vh;
     display: flex;
     align-items: center;
+    color: var(--primary-light-text-color);
 }
 
 .event-details-heading h3{

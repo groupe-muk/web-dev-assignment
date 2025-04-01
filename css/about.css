@@ -48,8 +48,10 @@ h2 {
 .active {
     border-bottom-style: solid;
     border-bottom-width: 2px;
-    color: var(--accent-color);
     border-bottom-color: var(--accent-color);
+}
+.active p{
+    color: var(--accent-color);
 }
 .tab-card {
     padding: 2rem;

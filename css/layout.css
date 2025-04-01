@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
 
+
+
 :root {
  /* Colors */
 
@@ -9,14 +11,14 @@
   --accent-color: #B18E3F; /* Headings, buttons (Gold) */
   --button-color: #9BD7F1; /* Footer, buttons (Light blue)*/
   --primary-light-text-color: #000000; /* Main text */
-  
-
+  --light-prev-days-color:#EFEFF0; /*previous days color */
+  --light-calendar-button-color: #9BD7F1;/*card links and calendar buttons*/
 /* Dark mode: */
  --primary-dark-color: #111827; /* Background color */
  --secondary-dark-color: #1E1E2E; /* Cards, footer */
  --accent-color: #B18E3F; /* Headings, buttons (Gold) */
  --primary-dark-text-color: #94949B; /* Main text (Grey) */
-
+ --dark-prev-days-color: #efeff049; /*previous days color*/
  /* Fonts */
 --primary-font: 'Roboto Slab', serif;
 --heading-font: 'Playfair Display', serif;
@@ -31,7 +33,7 @@
 --font-size-nav: 1.1rem; /* Navigation links */
 --font-size-stats: 1.5rem; /* Numbers in the stats section */
 --font-size-smaller: 0.75rem;
-
+}
 /* Spacing */
 .vertical-space-1 {
   height: 1rem;
@@ -49,55 +51,4 @@
 
 
 /* page layout */
-* {
-  padding: 0;
-  margin: 0;
-  font-family: var(--primary-font);
-  font-size: var(--font-size-body); 
-} 
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--primary-light-text-color);
-}
-h1 {
-  font-size: var(--font-size-heading);
-}
-h2 {
-  font-size: var(--font-size-subheading);
-}
-h3 {
-  font-size: var(--font-size-sub-subheading);
-
-}
-p {
-  color: var(--primary-light-text-color);
-}
-body {
-  
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Ensure the body spans the full viewport height */
-}
-header {
-  background-color: var(--secondary-light-color);
-  height: fit-content;
-  min-height: 5vh;
-  padding-top: 10px;
-  width:100%;
-  
-}
-
-footer {
-  background-color: var(--button-color);
-  height: fit-content;
-  min-height: 25vh;
-  padding-left: 8rem;
-  padding-top: 5rem;
-  flex:1
-  
-}
-
-
-
-}

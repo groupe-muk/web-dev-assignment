@@ -1,40 +1,63 @@
 @import url("layout.css");
 @import url("components.css");
 
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--primary-font);
+    font-size: var(--font-size-body); 
+} 
+  
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-light-text-color);
+  }
+h1 {
+    font-size: var(--font-size-heading);
+  }
+h2 {
+    font-size: var(--font-size-subheading);
+  }
+h3 {
+    font-size: var(--font-size-sub-subheading);
+  
+  }
+p {
+    font-family: var(--primary-font);
+    color: var(--primary-light-text-color);
+  }
+
+body {
+  
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body spans the full viewport height */
+  }
+header {
+    background-color: var(--secondary-light-color);
+    height: fit-content;
+    min-height: 5vh;
+    padding-top: 10px;
+    
+  }
+  
+footer {
+    background-color: var(--button-color);
+    height: fit-content;
+    min-height: 25vh;
+    padding-left: 8rem;
+    padding-top: 5rem;
+    flex:1
+    
+  }
+   
 
 body {
     background-color: var(--primary-light-color);
 }
 .card-icon {
     color: var(--accent-color);
-}
-.container {
-    width: 200px;
-    height: 100px;
-    color: black;
-    
-
-}
-
-.first-container {
-    background-color: blue;
-    flex:4;
-
-}
-.second-container {
-    background-color: aqua;
-    flex:2;
-}
-.third-container {
-    background-color: bisque;
-    flex:1;
-}
-.flex-container {
-    background-color: var(--secondary-dark-color);
-    padding: 10px;
-    flex-direction: row;
-    justify-content: space-evenly;
 }
 
 
@@ -76,8 +99,8 @@ body {
     color: var(--accent-color);
     font-family: var(--heading-font);
     font-size: var(--font-size-nav);
-
-} 
+}
+ 
 
 .SchMotto p{
 
@@ -89,10 +112,9 @@ body {
 .rightnav{
     
     display: flex;
-    padding-right: 30px;
+    padding-right: 2rem;
     flex-direction: row;
-    
-    
+        
 } 
 .navlist {
 
@@ -106,6 +128,7 @@ body {
 
 li{
     list-style: none;
+    color: var(--primary-light-text-color);
     
 }
 
@@ -127,19 +150,18 @@ a:active{
 
     display: flex;
     flex-direction: row;
-    gap: 2rem;
-    height: 25vh;
-
-    
+    gap: 2%;
+    height: 25vh;    
     
 }
 
 
 .col{
 
-    width: 25%;
+    
     display: flex;
     flex-direction: column;
+    width: 25%;
     gap: 1rem;
 
 }

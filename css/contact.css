@@ -37,23 +37,25 @@
     width: 95%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid var(--primary-light-color);
+    border: 2px solid #efeff049;
     border-radius: 5px;
+    background-color: transparent;
 }
 
 .contact-form textarea{
-    
-    height: 6rem;
+    resize: none;
+    height: 16rem;
 }
 .contact-form button {
     background: var(--accent-color);
-    color: var(--secondary-light-color);
+    color: #FFFFFF;
     padding: 10px 15px;
     border: none;
     cursor: pointer;
     width: 100%;
     font-size: 16px;
     border-radius: 5px;
+   
 }
 
 
@@ -65,3 +67,9 @@ iframe {
     background-color: #977423;
 
 }
+
+
+.labels{
+    color: var(--primary-light-text-color);
+}
+
