@@ -43,8 +43,8 @@
 }
 
 .contact-form textarea{
-    
-    height: 6rem;
+    resize: none;
+    height: 16rem;
 }
 .contact-form button {
     background: var(--accent-color);
@@ -55,6 +55,7 @@
     width: 100%;
     font-size: 16px;
     border-radius: 5px;
+   
 }
 
 
@@ -67,6 +68,8 @@ iframe {
 
 }
 
+
 .labels{
     color: var(--primary-light-text-color);
 }
+
