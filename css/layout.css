@@ -18,7 +18,7 @@
  --secondary-dark-color: #1E1E2E; /* Cards, footer */
  --accent-color: #B18E3F; /* Headings, buttons (Gold) */
  --primary-dark-text-color: #94949B; /* Main text (Grey) */
- --dark-prev-days-color: #efeff049 /*previous days color*/
+ --dark-prev-days-color: #efeff049; /*previous days color*/
  /* Fonts */
 --primary-font: 'Roboto Slab', serif;
 --heading-font: 'Playfair Display', serif;
