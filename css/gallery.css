@@ -46,11 +46,17 @@
    top: 0;
    width: 100%;
    height: 100%;
-   background:var(--primary-light-color) ;
-   display: none; 
+   background:rgba(0, 0, 0, 0.8) ;
+   display: none;
+   justify-content: center;
+   align-items: center; 
 }
-#lightbox-active{
+#lightbox.active{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.blur{
+    filter:blur(10px);
+    transition: filter 0.3s ease;
 }
