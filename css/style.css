@@ -71,6 +71,9 @@ body {
     background-color: var(--secondary-light-color);
         
 }
+#menu-button {
+  display: none;
+}
 
 .leftnav{
     
@@ -261,3 +264,98 @@ ul.sociallist{
   .contactlist p{
     display: inline;
   }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar {
+        align-items: flex-start;
+        padding: 0.8rem;
+        flex-direction: column;
+        
+    }
+    #menu-button {
+      display: block;
+    }
+    .leftnav {
+      display: flex;
+      justify-content: space-between;
+      width: 95%;
+      padding: 0 0.5rem;
+    }
+
+    .rightnav {
+      flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        display: none;
+        
+
+    }
+    
+
+    .navlist {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .SchDetails {
+        align-items: flex-start;
+    }
+
+    .welcome-text-container {
+        padding: 0 2rem;
+        text-align: center;
+    }
+
+    .card-section, .news-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+
+    .card, .news-card {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .foot {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .col {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .SchName p {
+        font-size: var(--font-size-small);
+    }
+
+    .SchMotto p {
+        font-size: var(--font-size-smaller);
+    }
+
+    .welcome-text-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .welcome-text-container p {
+        font-size: 0.875rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    .footer {
+        padding: 1rem;
+    }
+}

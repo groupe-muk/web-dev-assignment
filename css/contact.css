@@ -73,3 +73,38 @@ iframe {
     color: var(--primary-light-text-color);
 }
 
+/* Media Queries */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact-form, .contact-info {
+        width: 90%;
+        margin: auto;
+    }
+
+    iframe {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-us h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-form h2, .contact-info h3 {
+        font-size: 1.25rem;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 0.875rem;
+    }
+
+    .contact-form button {
+        font-size: 0.875rem;
+    }
+}
+
