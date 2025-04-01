@@ -72,6 +72,7 @@ body {
 }
 #menu-button {
   display: none;
+  color: var(--primary-light-text-color);
 }
 
 .leftnav{
@@ -153,7 +154,7 @@ a:active{
     display: flex;
     flex-direction: row;
     gap: 2%;
-    height: 25vh;    
+    height: fit-content;    
     
 }
 
@@ -273,7 +274,7 @@ ul.sociallist{
         
     }
     #menu-button {
-      display: block;
+      display: block  !important;
     }
     .leftnav {
       display: flex;
