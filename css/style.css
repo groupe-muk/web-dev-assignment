@@ -1,7 +1,57 @@
 @import url("layout.css");
 @import url("components.css");
 
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--primary-font);
+    font-size: var(--font-size-body); 
+} 
+  
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-light-text-color);
+  }
+h1 {
+    font-size: var(--font-size-heading);
+  }
+h2 {
+    font-size: var(--font-size-subheading);
+  }
+h3 {
+    font-size: var(--font-size-sub-subheading);
+  
+  }
+p {
+    font-family: var(--primary-font);
+    color: var(--primary-light-text-color);
+  }
+
+body {
+  
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body spans the full viewport height */
+  }
+header {
+    background-color: var(--secondary-light-color);
+    height: fit-content;
+    min-height: 5vh;
+    padding-top: 10px;
+    
+  }
+  
+footer {
+    background-color: var(--button-color);
+    height: fit-content;
+    min-height: 25vh;
+    padding-left: 8rem;
+    padding-top: 5rem;
+    flex:1
+    
+  }
+   
 
 body {
     background-color: var(--primary-light-color);
@@ -9,42 +59,22 @@ body {
 .card-icon {
     color: var(--accent-color);
 }
-.container {
-    width: 200px;
-    height: 100px;
-    color: black;
-}
-
-.first-container {
-    background-color: blue;
-    flex:4;
-
-}
-.second-container {
-    background-color: aqua;
-    flex:2;
-}
-.third-container {
-    background-color: bisque;
-    flex:1;
-}
-.flex-container {
-    background-color: var(--secondary-dark-color);
-    padding: 10px;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
 
 .navbar{
     display: flex;
     height: fit-content;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: var(--secondary-light-color);
+        
 }
 
-
 .leftnav{
-    /* padding-top: 20px; */
+    
     display: flex;
-    width: 30%;
+    align-items: center;
         
 }
 .SchDetails{
@@ -52,8 +82,15 @@ body {
     display: flex;
     flex: 1;
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 0.2rem;
         
+}
+
+.logo img{
+
+    margin: 0.4rem;
+    width: 65px; 
+    height: 65px;
 }
 
 .SchName p{
@@ -61,8 +98,8 @@ body {
     color: var(--accent-color);
     font-family: var(--heading-font);
     font-size: var(--font-size-nav);
-
-} 
+}
+ 
 
 .SchMotto p{
 
@@ -72,13 +109,11 @@ body {
 
 }
 .rightnav{
-    width:70%;
-    display: flex;
-    padding-right: 30px;
-    flex-direction: row;
-    justify-content: flex-end;
-
     
+    display: flex;
+    padding-right: 2rem;
+    flex-direction: row;
+        
 } 
 .navlist {
 
@@ -92,6 +127,7 @@ body {
 
 li{
     list-style: none;
+    color: var(--primary-light-text-color);
     
 }
 
@@ -113,19 +149,18 @@ a:active{
 
     display: flex;
     flex-direction: row;
-    gap: 2rem;
-    height: 30vh;
-
-    
+    gap: 2%;
+    height: 25vh;    
     
 }
 
 
 .col{
 
-    width: 25%;
+    
     display: flex;
     flex-direction: column;
+    width: 25%;
     gap: 1rem;
 
 }
@@ -157,3 +192,71 @@ ul.sociallist{
     color: var(--accent-color);
     font-family: var(--heading-font);
 }
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--secondary-light-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #94949B;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #111827;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .contactlist p{
+    display: inline;
+  }
