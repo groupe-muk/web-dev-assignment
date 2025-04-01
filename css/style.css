@@ -273,7 +273,7 @@ ul.sociallist{
         
     }
     #menu-button {
-      display: block;
+      display: block  !important;
     }
     .leftnav {
       display: flex;
