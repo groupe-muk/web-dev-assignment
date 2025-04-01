@@ -1,7 +1,3 @@
-// Attach the event listener to the theme toggle
-themeToggle.addEventListener("click", changeTheme);
-
-
 /*image slideshow on home page*/
 
 const carousel = document.getElementById("carousel");

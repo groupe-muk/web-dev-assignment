@@ -1,9 +1,11 @@
-
 let darkMode = localStorage.getItem("darkMode");
 darkMode = darkMode === null ? "disabled" : darkMode; // Default to disabled if null
 console.log("Loaded js");
 
 const themeToggle = document.querySelector("#theme-toggle");
+
+// Attach the event listener to the theme toggle
+themeToggle.addEventListener("click", changeTheme);
 
 // Apply the saved theme on page load
 function applyTheme() {
