@@ -1,3 +1,6 @@
+
+// Theme toggle functionality
+
 let darkMode = localStorage.getItem("darkMode");
 darkMode = darkMode === null ? "disabled" : darkMode; // Default to disabled if null
 console.log("Loaded js");
@@ -59,6 +62,28 @@ function changeTheme() {
         console.log("Theme changed to dark mode");
     }
 }
+
+
+
+
+
+
+function openMenu() {
+    if(menuOpen) {
+        console.log("Menu closed");
+        
+        menu.style.display = "none";
+        menuOpen = false;
+    }
+    else {
+        console.log("Menu opened");
+        
+        menu.style.display = "flex";
+        menuOpen = true;
+    }
+}
+
+
 
 
 
