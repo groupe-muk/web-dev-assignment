@@ -1,10 +1,15 @@
 /* Css for gallery.html */
+
+.page-info{
+    margin-top: 3rem;
+}
 .center-bisque{
     color:var(--accent-color);
     text-align: center;
+
 }
 .center-black{
-    color: black;
+    color: var(--primary-light-text-color);
     text-align: center;
 }
 /*.grid-container{
