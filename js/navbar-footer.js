@@ -45,6 +45,7 @@ function applyTheme() {
         document.documentElement.style.setProperty("--button-color", "#111827");
         document.documentElement.style.setProperty("--light-calendar-button-color", "#94949B");
         document.documentElement.style.setProperty("--light-prev-days-color", "#efeff049");
+        document.documentElement.style.setProperty("--light-table-header-color", "#1E1E2E");
         themeToggle.checked = true; // Set the toggle to checked
     } else {
         document.documentElement.style.setProperty("--primary-light-color", "#EFEFF0");
@@ -53,6 +54,8 @@ function applyTheme() {
         document.documentElement.style.setProperty("--button-color", "#9BD7F1");
         document.documentElement.style.setProperty("--light-calendar-button-color", "#9BD7F1");
         document.documentElement.style.setProperty("--light-prev-days-color", "#EFEFF0");
+        document.documentElement.style.setProperty("--light-table-header-color", "#e0f7fa");
+    
         themeToggle.checked = false; // Set the toggle to unchecked
     }
 }
