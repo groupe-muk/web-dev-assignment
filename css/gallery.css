@@ -1,1 +1,62 @@
 /* Css for gallery.html */
+.center-bisque{
+    color:var(--accent-color);
+    text-align: center;
+}
+.center-black{
+    color: black;
+    text-align: center;
+}
+/*.grid-container{
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: repeat( auto 1fr);
+    gap: 40px;
+    width: 200px;
+    height: 100px;
+    align-items:first baseline;
+
+}*/
+.image-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+   
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-content: center;
+    padding-top: 30px;
+  
+    
+}
+.image-row img{
+    
+    width: 30rem;
+    height: 20rem;
+    cursor: pointer;
+}
+#lightbox{
+    position: fixed;
+   z-index: 1000;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background:rgba(0, 0, 0, 0.8) ;
+   display: none;
+   justify-content: center;
+   align-items: center; 
+}
+#lightbox.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blur{
+    filter:blur(10px);
+    transition: filter 0.3s ease;
+}
