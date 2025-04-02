@@ -13,6 +13,7 @@
   --primary-light-text-color: #000000; /* Main text */
   --light-prev-days-color:#EFEFF0; /*previous days color */
   --light-calendar-button-color: #9BD7F1;/*card links and calendar buttons*/
+  --light-table-header-color: #e0f7fa;
 /* Dark mode: */
  --primary-dark-color: #111827; /* Background color */
  --secondary-dark-color: #1E1E2E; /* Cards, footer */
