@@ -34,11 +34,14 @@ let currentMonth = date.getMonth();
 let currentYear = date.getFullYear();
 
 const events = {
-    "2025-04-05": ["Science Fair"],
-    "2025-04-10": ["Sports Day"],
-    "2025-04-15": ["Parent-Teacher Meeting"],
-    "2025-04-20": ["Mid-Term Exams Begin"],
-    "2025-03-30": ["Visitation Day"]
+    "2025-02-03": ["Beginning of Term I"],
+    "2025-02-17": ["S1 Reporting Day"],
+    "2025-03-01": ["S1 Class Day"],
+    "2025-03-22": ["MDD day"],
+    "2025-03-30": ["Visitation Day"],
+    "2025-04-05": ["Parent-Teacher Annual General Meeting"],
+    "2025-04-25": ["End of Term I"],
+    "2025-05-26": ["Beginning of Term II"],
 };
 
 
