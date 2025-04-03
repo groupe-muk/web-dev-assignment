@@ -7,37 +7,17 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/home.css">
     <script src="https://kit.fontawesome.com/1db383bd4d.js" crossorigin="anonymous"></script>
+    <script src="/js/navbar-footer.js" async></script>
 
     <title>Welcome | Mt. St. Mary's College Namagunga</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
   </head>
 
   <body>
-    <!-- this is where the navbar will be -->
     <header>
-      <nav class="navbar">
-
-        <div class="leftnav"> <!--This will have the school name and logo -->
-          <div class="logo"><img src = "assets/images/logo.png" width="70px" height="70px"></div>
-            <div class="SchDetails">
-              <div class="SchName"><b><p>Mt. St. Mary's College Namagunga</p></b></div>
-              <div class="SchMotto"><p>Through knowledge to virtue</p></div>
-            </div>  
-
-        </div>
-        <div class="rightnav">
-          <ul class="navlist">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/about.html">About Us</a></li>
-            <li><a href="/academics.html">Academics</a></li>
-            <li><a href="/news.html">News And Events</a></li>
-            <li><a href="/gallery.html">Gallery</a></li>
-            <li><a href="/contact.html">Contact Us</a></li>
-            <li><button>Dark Mode</button></li>
-          </ul>
-        </div>
-      </nav>
     </header>
-    <section class="welcome-section">
+
+    <section id = "carousel" class="welcome-section">
       <div class="welcome-text-container">
         <h1>Welcome to Excellence in Education</h1>
         <div class="vertical-space-1"></div>
@@ -47,7 +27,6 @@
         <div class="vertical-space-2"></div>
 
         <button class="btn primary-btn">Apply Now</button>
-        <button class="btn secondary-btn">Virtual Tour</button>
       </div>
     </section>
 
@@ -104,7 +83,7 @@
     <section class="news-section">
       <div class="news-card">
         <div class="card-image-section">
-          <img src="/assets/images/sports day1.jpg" alt="Sports day" >
+          <img src="/assets/images/sports-day1.jpg" alt="Sports day" >
         </div>
         <div class="news-card-content-section">
           <div class="title-section">
@@ -125,7 +104,7 @@
 
       <div class="news-card">
         <div class="card-image-section">
-          <img src="/assets/images/S4 leavers partyy.jpg" alt="Sports day" >
+          <img src="/assets/images/S4-leavers-partyy.jpg" alt="Sports day" >
         </div>
         <div class="news-card-content-section">
           <div class="title-section">
@@ -146,7 +125,7 @@
 
       <div class="news-card">
         <div class="card-image-section">
-          <img src="/assets/images/Namagunga day.jpg" alt="Sports day" >
+          <img src="/assets/images/Namagunga-day.jpg" alt="Sports day" >
         </div>
         <div class="news-card-content-section">
           <div class="title-section">
@@ -165,54 +144,47 @@
         
       </div>
     </section>
-
-    <footer>
-
-     <div class = "foot"> 
-      <div class="col one">
-        <p class = "title"><b>About Us</b></p>
-        <p>Mt. St. Mary's College Namagunga is committed to excellence in education and character formation</p>
-
-      </div>
-      <div class="col two">
-        <div class = "title"><b>Quick Links</b></div>
-          <div>
-            <ul>
-              <li><a href="/news.html">News And Events</a></li>
-              <li><a href="/academics.html">Academics</a></li>
-              <li><a href="/gallery.html">Gallery</a></li>
-            </ul>
-          </div>       
-      </div>
-
-      <div class="col three">
-        <div class = "title"><b>Contact Us</b></div>
-          <div class = "contacts">
-            <ul class = "contactlist">
-              <li><i class="fa fa-map-marker icon" aria-hidden="true"></i> Lugazi, Uganda</li>
-              <li><i class="fa fa-phone icon" aria-hidden="true"></i> +256 123 456 789</li>
-              <li><i class="fa fa-envelope icon" aria-hidden="true"></i> info@msmcn.ug</li>
-            </ul>
-          </div> 
-
-      </div>
-      <div class="col four">
-        <div class = "title"><b>Follow Us</b></div>
-        <div class = "socials">
-          <ul class = "sociallist">
-            <li><i class="fa fa-facebook-square icon" aria-hidden="true"></i></li>
-            <li><i class="fa fa-twitter icon" aria-hidden="true"></i></li>
-            <li><i class="fa fa-instagram icon" aria-hidden="true"></i></li>
-            <li><i class="fa fa-linkedin-square icon" aria-hidden="true"></i></li>
-          </ul>
+    <div class = "testimonial-carousel" id = "testimonial-carousel">
+      <div class="testimonial-heading"><h2>Testimonials:</h2></div>
+      <div class="testimonial-wrapper" id = "testimonial-wrapper">
+        <div class = "control prev">
+          <div class="control-btn" id = "prevbtn"><i class="fa fa-angle-double-left icon" aria-hidden="true"></i></div>
+        </div>  
+        <div class="testimonial">
+          <img src="/assets/images/quotes.png">
+          <p>This school changed my life!</p>
+          <div class="Author">-Jane Kissa-</div>
         </div>
-        
-        
+        <div class="testimonial">
+          <img src="/assets/images/quotes.png">
+          <p>I learned so much here.</p>
+          <div class="Author">-Mary Nafuna-</div>
+        </div>
+        <div class="testimonial">
+          <img src="/assets/images/quotes.png">
+          <p>So many of the lessons I got, I still use everday.</p>
+          <div class="Author">-Grace Nantale-</div>
+        </div>
+        <div class="testimonial">
+          <img src="/assets/images/quotes.png">
+          <p>The teachers were a blessing.</p>
+          <div class="Author">-Joan Kenyangi-</div>
+        </div>
+        <div class="testimonial">
+          <img src="/assets/images/quotes.png">
+          <p> I got so many opportunities here that made me who I am today.</p>
+          <div class="Author">-Emily Namazzi-</div>
+        </div>
+        <div class = "control next">
+          <div class="control-btn" id = "nextbtn"><i class="fa fa-angle-double-right icon" aria-hidden="true"></i></div>
+        </div>
       </div>
-
     </div>
 
-          </footer>
+    <footer>
+    </footer>
+          <script src="/js/script.js" defer></script>
+          <script src="/js/home.js" defer></script>
     
 </body>
 

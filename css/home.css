@@ -3,28 +3,33 @@
 @import url(components.css);
 
 .flex {
-  display: felx;
+  display: flex;
 }
 .welcome-section {
-    background: #111827;
     min-height: 70vh;
     background-repeat: no-repeat;
     background-size:cover;
-    background-image:  linear-gradient(
-      rgba(0, 0, 0, 0.5), /* Top gradient color (semi-transparent black) */
-      rgba(0, 0, 0, 0.5)  /* Bottom gradient color (semi-transparent black) */
-    ),url(/assets/images/dining-hall.jpg);
+    transition: background-image 0.5s ease-in-out;
+    color: white; 
+    flex-grow: 2; /* Pushes this section to take up available space*/ 
+}
+  .welcome-section p{
     color: white;
-    flex-grow: 2; /* Pushes this section to take up available space */
-  
-  }
+}
+  .welcome-section h1{
+    color: white;
+}
   .card {
     border-radius: 0.4rem;
     padding: 2rem;
     background-color: var(--secondary-light-color);
     width: 20rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
-  }
+}
+  .card:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.05);
+}
 .card-section {
     display: flex;
     justify-content: space-around;
@@ -32,11 +37,13 @@
     background-color: var(--primary-light-color);
     min-height: fit-content;
     flex-grow: 1; /* Pushes this section to take up available space */
-  }
+}
   .title-section {
     font-family: var(--heading-font);
     font-weight: bold;
-  }
+  
+}
+
   .description-section p{
     font-size: var(--font-size-small);
 
@@ -47,6 +54,10 @@
     width: 20rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
     overflow: hidden;
+  }
+  .news-card:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.05);
   }
 .news-section {
   display: flex;
@@ -69,18 +80,226 @@
 }
 
 .news-card-link-section a{
-  color: var(--button-color);
+  color: var(--light-calendar-button-color);
   display: inline;
   cursor: pointer;
 }
-.news-card-link-section a:hover {
+
+.news-card-link-section p{
+
+  color: var(--light-calendar-button-color);
+}
+.news-card-link-section a:hover,
+.news-card-link-section p:hover{
   color: var(--accent-color);
 
-
 }
-
 
 .news-card-link-section p, .news-card-link-section i{
   display: inline;
   padding:0 0.2rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .welcome-text-container {
+        padding: 0 2rem;
+        text-align: center;
+    }
+
+    .card-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .news-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+
+    .news-card {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .testimonial-carousel {
+      min-height: fit-content; /* Adjust height for smaller screens */
+      padding: 2rem 1rem;
+  }
+
+  .testimonial-wrapper {
+      flex-direction: column; /* Stack testimonials vertically */
+  
+  }
+
+  .testimonial {
+      max-width: 75%; /* Reduce width */
+      padding: 15px; /* Reduce padding */
+      margin: 5px auto; /* Adjust margin */
+  }
+
+  .control-btn {
+      width: 25px; /* Reduce button size */
+      height: 25px;
+      margin: 20px;
+  }
+
+  .Author {
+      font-size: 0.9rem; /* Reduce font size */
+  }
+
+  .testimonial img {
+      width: 25px; /* Scale down image */
+      height: 20px;
+  }
+
+}
+
+@media (max-width: 480px) {
+    .welcome-text-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .welcome-text-container p {
+        font-size: 0.875rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+
+
+  .testimonial {
+      width: 40%; /* Use full width */
+      padding: 10px; /* Further reduce padding */
+      margin: 5px;
+      max-width: 100%;
+      font-size: 0.875rem; /* Reduce font size */
+  }
+  .testimonial-carousel {
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .control-btn {
+      width: 20px; /* Further reduce button size */
+      height: 20px;
+      margin: 10px;
+  }
+
+  .Author {
+      font-size: 0.8rem; /* Further reduce font size */
+  }
+
+  .testimonial img {
+      width: 20px; /* Scale down image */
+      height: 15px;
+  }
+}
+
+ .testimonial-carousel{
+  align-items: center;
+  width: 95%;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--primary-light-color);
+  height: 30vh;
+  flex-grow: 1; 
+
+ }
+
+.testimonial-heading{
+
+  text-align: center;
+  margin-top: 20px;
+ }
+
+.testimonial-heading h2{
+  color: var(--accent-color);
+ }
+.testimonial-wrapper{
+  display: flex;
+  flex-direction:row;
+  transition: transform 1s ease-in-out;
+  width: 100%;
+}
+
+.testimonial{
+
+  opacity: 0;
+  display: none;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--secondary-light-color);
+  max-width: 500px;
+  width: 90%;
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 1s ease-in-out;
+}
+
+.testimonial.active{
+  display: block;
+  opacity: 1;
+}
+
+.testimonial img{
+
+  width:30px;
+  height:25px;
+
+}
+
+.Author{
+  font-weight: bold;
+  margin-top: 10px;
+  color: var(--accent-color);
+}
+
+.control-btn .icon{
+  color: var(--primary-light-text-color);
+}
+
+.control-btn{
+  margin: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 5px;
+  width:30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.control-btn:hover{
+  background-color: rgba(128, 128, 128, 0.232);
+  transform: scale(1.05);
+}
+
+.control{
+  display: flex;
+  flex: 2;
+  align-items: center;
+  padding: 5px;
+  
+}
+
+.control.prev{
+  justify-content: flex-start;
+}
+
+.control.next{
+  justify-content: flex-end;
 }
